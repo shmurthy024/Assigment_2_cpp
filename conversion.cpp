@@ -14,6 +14,7 @@ void userInput(double &f, double &i){
   cin >> i;
 }
 
+//convert inches to feet for ease
 double inchesToFeet(double feet, double inches){
   double f = feet;
 
@@ -22,6 +23,7 @@ double inchesToFeet(double feet, double inches){
   return feetConv;
 }
 
+//find meters value return double
 double meters(double ft, double in){
 
   double temp = inchesToFeet(ft, in);
@@ -30,6 +32,7 @@ double meters(double ft, double in){
 
 }
 
+//find centimeter value return double
 double centimeters(double m){
   double centimeterVal = 0.0;
   centimeterVal = m * 100.0;
@@ -61,7 +64,7 @@ int main(){
     cout << "Type exit if you want to exit or else say something else" << endl;
     cin >> input;
 
-    
+    //check if input is exit and then break/exit from the while loop
     if(input == "exit" || input == "Exit"){
       break;
     }
