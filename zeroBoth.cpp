@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+//pass by references for ease and quickness
 void zeroBoth(int &a, int &b){
   a = 0;
   b = 0;
