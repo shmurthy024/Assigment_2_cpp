@@ -15,6 +15,7 @@ int main(){
     }
     else{
       cout << "ERROR: Non-negative number was inputed...try again" << endl;
+      //check if the input is changed to a non-negative number
       while(!(input >= 0)){
         cout << "Enter a non-negative number: " << endl;
         cin >> input;
